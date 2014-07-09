@@ -1,18 +1,18 @@
-puts "Please enter the cost of your meal (e.g., 22.45): $ "
+puts "enter the cost of your meal (e.g., 22.45): $ "
 meal_cost = Float(gets)
-puts "Please enter tax rate as a percentage (e.g., 12.5 or 15): "
+puts "enter tax rate as a percentage (e.g., 12.5 or 15): "
 tax_percent = Float(gets)
-puts "Please the tip percentage you'd like to leave (e.g., 18): "
+puts "the tip percentage you'd like to leave (e.g., 18): "
 tip_percent = Float(gets)
  
-def calculate_rate(base, percentage)
+def rate(base, percentage)
   amount = base * percentage / 100
   return amount
 end
  
-tax_value = calculate_rate(meal_cost, tax_percent)
+tax_value = rate(meal_cost, tax_percent)
 meal_with_tax = meal_cost + tax_value
-tip_value = calculate_rate(meal_with_tax, tip_percent)
+tip_value = rate(meal_with_tax, tip_percent)
 total_cost = meal_with_tax + tip_value
  
 print "The pre-tax cost of your meal was $%.2f.\n" % meal_cost
