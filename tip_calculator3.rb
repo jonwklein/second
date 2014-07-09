@@ -1,8 +1,8 @@
-puts "enter the cost of your meal (e.g., 22.45): $ "
+puts "enter the cost of your meal (for example - 55.00): $ "
 meal_cost = Float(gets)
-puts "enter tax rate as a percentage (e.g., 12.5 or 15): "
+puts "enter tax rate as a percentage (for example - 15): "
 tax_percent = Float(gets)
-puts "the tip percentage you'd like to leave (e.g., 18): "
+puts "the tip percentage you'd like to leave (for example - 18): "
 tip_percent = Float(gets)
  
 def rate(base, percentage)
